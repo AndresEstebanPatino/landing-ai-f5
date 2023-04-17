@@ -1,6 +1,5 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
 
+import { Inter } from 'next/font/google'
 import Spline from '@splinetool/react-spline';
 
 
@@ -9,11 +8,11 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main>
-    <section class="bg-white dark:bg-gray-900 relative">
+    <section class="bg-[#ff4100] dark:bg-gray-900 relative h-[90vh] grid grid-rows-[100px_auto] rounded-[10em] rounded-tr-none rounded-tl-none rounded-bl-none overflow-hidden">
     <nav  class="container mx-auto p-6 lg:flex lg:items-center lg:justify-between">
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between relative z-20">
         <div>
-            <a class="text-2xl font-bold text-gray-800 hover:text-gray-700 dark:text-white dark:hover:text-gray-300 lg:text-3xl" href="#">Brand</a>
+            <a class="text-2xl font-bold text-white hover:text-gray-700 dark:text-white dark:hover:text-gray-300 lg:text-3xl" href="#">Factoria f5</a>
         </div>
 
        {/* <!-- Mobile menu button -->*/ }
@@ -31,7 +30,7 @@ export default function Home() {
         </div>
 
       { /* <!-- Mobile Menu open: "block", Menu closed: "hidden" -->*/}
-        <div x-cloak class="absolute inset-x-0 z-20 w-full bg-white px-6 py-4 shadow-md transition-all duration-300 ease-in-out dark:bg-gray-900 lg:relative lg:top-0 lg:mt-0 lg:flex lg:w-auto lg:translate-x-0 lg:items-center lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:dark:bg-transparent">
+        <div x-cloak class="absolute inset-x-0 z-20 w-full bg-white px-6 py-4 shadow-md transition-all duration-300 ease-in-out dark:bg-gray-900 hidden lg:visible lg:relative lg:top-0 lg:mt-0 lg:flex lg:w-auto lg:translate-x-0 lg:items-center lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:dark:bg-transparent">
         <div class="lg:-px-8 flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:space-y-0">
             <a class="transform text-gray-700 transition-colors duration-300 hover:text-blue-500 dark:text-gray-200 dark:hover:text-blue-400 lg:mx-8" href="#">Home</a>
             <a class="transform text-gray-700 transition-colors duration-300 hover:text-blue-500 dark:text-gray-200 dark:hover:text-blue-400 lg:mx-8" href="#">Components</a>
@@ -43,12 +42,12 @@ export default function Home() {
         </div>
     </nav>
 
-    <div class="container mx-auto px-6 py-16 text-center z-10 relative pointer-events-none h-[80vh]">
-        <div class="mx-auto max-w-lg">
-        <h1 class="text-3xl font-bold text-gray-800 dark:text-white lg:text-4xl">Building Your Next App with our Awesome components</h1>
-        <p class="mt-6 text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero similique obcaecati illum mollitia.</p>
-        <button class="mt-6 rounded-lg bg-blue-600 px-6 py-2.5 text-center text-sm font-medium capitalize leading-5 text-white hover:bg-blue-500 focus:outline-none lg:mx-0 lg:w-auto">Start 14-Day free trial</button>
-        <p class="mt-3 text-sm text-gray-400">No credit card required</p>
+    <div class="container mx-auto px-6 py-auto text-left z-10 relative pointer-events-none ">
+        <div class="flex h-full flex-col justify-center">
+        <h1 class="text-5xl font-bold text-white dark:text-white lg:text-6xl"><span className='text-2xl'>Formaciones Empresariales en <br></br></span> Inteligencia artificial</h1>
+        <p class="mt-6 text-white dark:text-gray-300">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero similique obcaecati illum mollitia.</p>
+        <button class="mt-6 rounded-3xl bg-blue-600 px-6 py-2.5 text-center text-sm font-medium capitalize text-white hover:bg-blue-500 focus:outline-none max-w-[70%] lg:mx-0 lg:w-max pointer-events-auto">Quiero apuntarme</button>
+        <p class="mt-3 text-sm text-gray-400">Lorem ipsum</p>
         </div>
 
         <div class="flex h-50 justify-center">
@@ -56,7 +55,7 @@ export default function Home() {
         </div>
     </div>
     <div className='absolute top-0 h-full w-full z-0'>
-      <Spline scene="https://draft.spline.design/ylXYhSZAQ57jkOFb/scene.splinecode" />
+      <Spline scene="https://prod.spline.design/PjzxcOmEfe48pe7b/scene.splinecode" />
     </div>
     {/*<div className='absolute top-0 h-full w-full z-0'>
     <Spline scene="https://prod.spline.design/1B6rD0kKeImB3mLa/scene.splinecode" />
