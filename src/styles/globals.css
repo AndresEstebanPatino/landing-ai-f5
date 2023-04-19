@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Poppins:wght@100;300;400;600;700&family=Rubik+Mono+One&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +7,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --orange-f5: #FF4700;
+  --salmon-f5: #FFDFD3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,3 +23,45 @@ body {
   color: rgb(var(--foreground-rgb));
   
 }
+.title-section{
+ position: relative;
+ width: fit-content;
+ z-index: 0;
+}
+
+.title-section::before{
+  width: 115%;
+  height: 30%;
+  content: '';
+  background-color: var(--salmon-f5);
+  position: absolute;
+  top: 70%;
+  right: -10%;
+  z-index: -1;
+  border-radius: 50px;
+}
+
+.title-section::after{
+  width: 100px;
+  height: 100px;
+  content: url("../../public/img/grafico4.svg");
+
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  transform: translateY(-50%);
+  z-index: -1;
+  border-radius: 50px;
+}
+
+@media (max-width:380px) {
+  .title-section::after{
+    width: 40px;
+    height: 40px;
+    top:50%;
+    left: 100%;
+   
+  
+  }
+}
+
