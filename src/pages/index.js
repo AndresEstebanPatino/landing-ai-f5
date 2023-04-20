@@ -17,12 +17,15 @@ export default function Home() {
             </a>
         </div>
 
-       
+                    
+        <img className='mix-blend-multiply w-32 block lg:hidden' src='./img/logo-propuestas-tech.png' alt='logo factoria f5'/>
 
+
+        </div>
 
         
-        <img className='mix-blend-multiply max-w-60 translate-y-6' src='./img/logo-propuestas-tech.png' alt='logo factoria f5'/>
-            
+        <img className='mix-blend-multiply w-60 translate-y-6 hidden lg:block' src='./img/logo-propuestas-tech.png' alt='logo factoria f5'/>
+       
 
       { /* <!-- Mobile Menu open: "block", Menu closed: "hidden" -->*/}
         <div x-cloak class="absolute inset-x-0 z-20 w-full bg-white px-6 py-4 shadow-md transition-all duration-300 ease-in-out dark:bg-gray-900 hidden lg:visible lg:relative lg:top-0 lg:mt-0 lg:flex lg:w-auto lg:translate-x-0 lg:items-center lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:dark:bg-transparent">
