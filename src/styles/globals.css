@@ -23,7 +23,7 @@ body {
   color: rgb(var(--foreground-rgb));
   
 }
-.title-section{
+.title-section, .title-side{
  position: relative;
  width: fit-content;
  z-index: 0;
@@ -65,3 +65,33 @@ body {
   }
 }
 
+
+.title-side::before{
+  width: 85%;
+  height: 30%;
+  content: '';
+  background-color: var(--salmon-f5);
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  z-index: -1;
+  border-radius: 50px;
+}
+
+.title-side::after{
+  width: 100px;
+  height: 100px;
+  content: url("../../public/img/grafico4.svg");
+
+  position: absolute;
+  top: 70%;
+  right: 0%;
+  transform: translateY(-50%);
+  z-index: -1;
+  border-radius: 50px;
+}
+
+
+.st0{
+  fill: #FF4700;
+}
