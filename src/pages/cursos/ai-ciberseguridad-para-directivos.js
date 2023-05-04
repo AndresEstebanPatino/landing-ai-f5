@@ -28,7 +28,7 @@ export default function Home() {
        
 
       { /* <!-- Mobile Menu open: "block", Menu closed: "hidden" -->*/}
-        <div className="absolute inset-x-0 z-20 w-full bg-white px-6 py-4 shadow-md transition-all duration-300 ease-in-out dark:bg-gray-900 hidden lg:visible lg:relative lg:top-0 lg:mt-0 lg:flex lg:w-auto lg:translate-x-0 lg:items-center lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:dark:bg-transparent">
+        <div x-cloak className="absolute inset-x-0 z-20 w-full bg-white px-6 py-4 shadow-md transition-all duration-300 ease-in-out dark:bg-gray-900 hidden lg:visible lg:relative lg:top-0 lg:mt-0 lg:flex lg:w-auto lg:translate-x-0 lg:items-center lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:dark:bg-transparent">
         <div className="lg:-px-8 flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:space-y-0">
             <a className="text-gray-800 transition-colors duration-300 hover:text-gray-900 lg:mx-8" href="#">Formaciones</a>
         </div>
@@ -59,10 +59,10 @@ export default function Home() {
         </div> 
     </div>
     <div className='absolute top-0 h-full w-full z-0 mix-blend-multiply hidden md:block '>
-      <Spline   scene="https://prod.spline.design/PjzxcOmEfe48pe7b/scene.splinecode" />
+      <Spline scene="https://prod.spline.design/PjzxcOmEfe48pe7b/scene.splinecode" />
     </div>
     <div className='absolute top-0 h-full w-full z-0 mix-blend-multiply  opacity-50 md:hidden '>
-      <Spline   scene="https://prod.spline.design/9xHIA-SM8e1fdrPr/scene.splinecode" />
+      <Spline scene="https://prod.spline.design/9xHIA-SM8e1fdrPr/scene.splinecode" />
     </div>
 
     
@@ -88,8 +88,8 @@ export default function Home() {
         </div>
 
         <div>
-        <img className="h-60 w-full  rounded-3xl object-cover" src="https://images.unsplash.com/photo-1621609764180-2ca554a9d6f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="" />
-               <h2 className="mt-4 text-2xl  text-gray-800 ">Bootcamp de IA para <strong>demandantes de empleo</strong></h2>
+            <img className="h-60 w-full  rounded-3xl object-cover" src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" />
+            <h2 className="mt-4 text-2xl  text-gray-800 ">Bootcamp de IA para <strong>demandantes de empleo</strong></h2>
             <p className="mt-2 text-lg uppercase tracking-wider text-orange-f5 ">8 meses</p>
         </div>
         </div>
