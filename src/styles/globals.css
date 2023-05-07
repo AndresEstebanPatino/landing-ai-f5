@@ -23,6 +23,11 @@ body {
   color: rgb(var(--foreground-rgb));
   
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 .title-section, .title-side{
  position: relative;
  width: fit-content;
