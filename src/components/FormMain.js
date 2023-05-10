@@ -5,8 +5,13 @@ function FormMain(props) {
     const [sended, SetSended] = useState(false)
 
     const [name, setName] = useState('')
+    const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
+    const [company, setCompany] = useState('')
+    const [rol, setRol] = useState('')
+    const [companySize, setCompanySize] = useState('')
+    const [address, setAddress] = useState('')
     const [course, setCourse] = useState(`${props.curso}`)
     const [date, setDate] = useState(`${new Date().toJSON().slice(0, 10)}`)
 
@@ -14,16 +19,22 @@ function FormMain(props) {
         e.preventDefault();
         const formData = new FormData()
         formData.append('name',name)
+        formData.append('lastName',lastName)
         formData.append('email',email)
         formData.append('phone',phone)
+        formData.append('company',company)
+        formData.append('rol',rol)
+        formData.append('companySize',companySize)
         formData.append('course',course)
         formData.append('date',date)
         
-        fetch('https://script.google.com/macros/s/AKfycby6R8p6Sj-bl5TTA3GiLWJK-aVZt8fnopAUStlb-ZK59XQCEDiQxBZPYUZR9YAyyJfy/exec', {
-            method: "POST",
+        fetch('https://script.google.com/macros/s/AKfycbzGhvsN-1HtKEC80-IlsYMSTndxbOaznbcG-vOS6JBl-L2tRtANM-4isKJchVotkOt0/exec', {
+            mode: 'no-cors',
+            method: "post",
             body: formData
         }).then(response => {
-            if (response.status === 200){
+            console.log(response);
+            if (response.status === 200 || response.status === 0) {
                 SetSended(true)
             }
         })
@@ -33,33 +44,62 @@ function FormMain(props) {
     }
 
 if(sended){
-    return(
-        <div className='mt-9 bg-green-200 w-full text-gray-900  rounded-b-full rounded-r-full flex flex-wrap px-9 py-5 justify-between items-center'>
-     
-    <p>Inscripción enviada correctamente</p>
-    </div>
-    )
+    return (
+      <div className="mt-9 bg-green-200 w-full text-gray-900  rounded-b-full rounded-r-full flex flex-wrap px-9 py-5 justify-between items-center">
+        <p>Inscripción enviada correctamente</p>
+      </div>
+    );
 }
 else {
   return (
     <form className="mt-6" onSubmit={handleSubmit}>
+       
         <div className="flex-1">
-        <label className="mb-2 block text-sm text-gray-600 ">Nombre</label>
-        <input required pattern=".{2,}" value={name} onChange={e=> setName(e.target.value)} name='name' id='name' type="text" className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 " />
+        <label className="mb-2 block text-sm text-gray-600 ">Nombres</label>
+        <input inputMode='text' required pattern=".{2,}" value={name} onChange={e=> setName(e.target.value)} name='name' id='name' type="text" className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 " />
+        </div>
+
+        <div className="flex-1">
+        <label className="mb-2 block text-sm text-gray-600 ">Apellidos</label>
+        <input inputMode='text'  required pattern=".{2,}" value={lastName} onChange={e=> setLastName(e.target.value)} name='lastname' id='lastname' type="text" className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 " />
         </div>
 
         <div className="mt-6 flex-1">
         <label className="mb-2 block text-sm text-gray-600 ">Email</label>
-        <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" value={email} onChange={e=> setEmail(e.target.value)} name='email' id='email' type="email"  className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 " />
+        <input inputMode='email' required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" value={email} onChange={e=> setEmail(e.target.value)} name='email' id='email' type="email"  className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 " />
         </div>
 
         <div className="mt-6 flex-1">
         <label className="mb-2 block text-sm text-gray-600 ">Telefono</label>
-        <input required pattern=".{8,}" value={phone} onChange={e=> setPhone(e.target.value)} name='phone' id='phone' type="tel"className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 " />
+        <input inputMode='tel' required pattern=".{8,}" value={phone} onChange={e=> setPhone(e.target.value)} name='phone' id='phone' type="tel"className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 " />
+        </div>
+
+        <div className="flex-1">
+        <label className="mb-2 block text-sm text-gray-600 ">Empresa</label>
+        <input inputMode='text' required pattern=".{2,}" value={company} onChange={e=> setCompany(e.target.value)} name='company' id='company' type="text" className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 " />
+        </div>
+
+        <div className="flex-1">
+        <label className="mb-2 block text-sm text-gray-600 ">Cargo</label>
+        <input inputMode='text' required pattern=".{2,}" value={rol} onChange={e=> setRol(e.target.value)} name='rol' id='rol' type="text" className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 " />
+        </div>
+
+        <div className="flex-1">
+        <label className="mb-2 block text-sm text-gray-600 ">Dirección empresa</label>
+        <input inputMode='text' required pattern=".{2,}" value={address} onChange={e=> setAddress(e.target.value)} name='address' id='address' type="text" className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 " />
+        </div>
+
+        <div className="flex-1">
+        <label className="mb-2 block text-sm text-gray-600 ">Tamaño empresa</label>
+        <select required value={companySize} onChange={e=> setCompanySize(e.target.value)} name='companySize' id='companySize' className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 ">
+        <option value=' De 0 a 9 trabajadores/as'> De 0 a 9 trabajadores/as</option>
+        <option value=' De 10 a 49 trabajadores/as '>  De 10 a 49 trabajadores/as </option>
+        <option value=' De 50 a 249 trabajadores/as '>  De 50 a 249 trabajadores/as</option>
+   
+        </select>
         </div>
 
         <div className="mt-6 flex-1">
-       
         <input type='checkbox' required/>
         <label className="text-sm text-gray-600"> He leído y acepto la <a href='https://factoriaf5.org/politica-de-privacidad/' target='blank' className='underline'>Política de privacidad</a></label>
         </div>

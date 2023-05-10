@@ -28,7 +28,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.title-section, .title-side{
+.title-section, .title-side, .title-side-alone{
  position: relative;
  width: fit-content;
  z-index: 0;
@@ -50,7 +50,6 @@ html {
   width: 100px;
   height: 100px;
   content: url("../../public/img/grafico4.svg");
-
   position: absolute;
   top: 50%;
   left: 110%;
@@ -71,7 +70,7 @@ html {
 }
 
 
-.title-side::before{
+.title-side::before, .title-side-alone::before{
   width: 85%;
   height: 30%;
   content: '';
@@ -83,17 +82,23 @@ html {
   border-radius: 50px;
 }
 
-.title-side::after{
+.title-side::after, .title-side-alone::after{
   width: 100px;
   height: 100px;
-  content: url("../../public/img/grafico4.svg");
-
   position: absolute;
   top: 70%;
   right: 0%;
   transform: translateY(-50%);
   z-index: -1;
   border-radius: 50px;
+}
+
+.title-side-alone::after{
+   content: url("../../public/img/grafico4.svg");
+}
+
+.title-side-alone::after{
+  content: '';
 }
 
 
