@@ -13,7 +13,7 @@ export default function Home() {
     <nav  className="container mx-auto p-6 lg:flex lg:items-center lg:justify-between ">
         <div className="flex items-center justify-between relative z-20">
         <div>
-            <a className="text-2xl font-bold text-white hover:text-gray-700 dark:text-white lg:text-3xl" href="#">
+            <a className="text-2xl font-bold text-white hover:text-gray-700 dark:text-white lg:text-3xl" href="/">
                 <img  src='https://factoriaf5.org/wp-content/uploads/2021/07/logo.png' alt='logo factoria f5'/>
             </a>
         </div>
@@ -27,7 +27,7 @@ export default function Home() {
 
       { /* <!-- Mobile Menu open: "block", Menu closed: "hidden" -->*/}
         <div className="absolute inset-x-0 z-20 w-full bg-white px-6 py-4 shadow-md transition-all duration-300 ease-in-out dark:bg-gray-900 hidden lg:visible lg:relative lg:top-0 lg:mt-0 lg:flex lg:w-auto lg:translate-x-0 lg:items-center lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:dark:bg-transparent">
-        <a className="mt-4 block rounded-3xl bg-orange-f5 px-6 py-2.5 text-center font-medium capitalize leading-5 text-white hover:bg-orange-600 lg:mt-0 lg:w-auto" href="#form">Inscripcion </a>
+        <a className="mt-4 block rounded-3xl bg-orange-f5 px-6 py-2.5 text-center font-medium capitalize leading-5 text-white hover:bg-orange-600 lg:mt-0 lg:w-auto" href="#form">¡ Inscríbete ya !</a>
         </div>
     </nav>
 
@@ -44,11 +44,12 @@ export default function Home() {
                 </a>
             </div>
 
-    <div className='mt-9 bg-gray-200 w-full  rounded-b-full rounded-r-full flex flex-wrap px-9 py-5 justify-between items-center'>
-        <img className='mix-blend-multiply' src='./img/logo-ue.png'/>
-        <img className='mix-blend-multiply' src='./img/logo-f5.png'/>
-        <img className='mix-blend-multiply' src='./img/logo-pimec.png'/>
-        <img className='mix-blend-multiply' src='./img/logo-simplon.png'/>
+    <div className='mt-9 bg-white w-full rounded-b-full rounded-r-full grid grid-cols-2 md:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] justify-items-center px-6 py-5 justify-center gap-3 items-center overflow-hidden drop-shadow-2xl'>
+        <img  src='/img/logo-ue.png'/>
+        <img  src='/img/logo-f5.png'/>
+        <img  src='/img/logo-pimec.png'/>
+        <img  src='/img/logo-microsoft.png'/>
+        <img  src='/img/logo-simplon.png'/>
     </div>
 
 
@@ -121,12 +122,15 @@ export default function Home() {
       
 
         <div className="flex flex-col items-center justify-between sm:flex-row">
-        <a href="#" className="text-2xl font-bold text-gray-800 transition-colors duration-300 hover:text-gray-700">TECH TIME 2 SKILL</a>
-
+        <a href="#" className="text-lg font-bold text-gray-800 transition-colors duration-300 hover:text-gray-700">Para cualquier duda o consulta, escríbenos a
+techtime2skill@factoriaf5.org</a>
         <p className="mt-4 text-sm text-gray-500 dark:text-gray-300 sm:mt-0">© Copyright 2023. All Rights Reserved.</p>
         </div>
     </div>
-    </footer>   
+    </footer>  
+    
+    <a className="fixed bottom-5  right-5 mt-4 rounded-3xl bg-orange-f5 px-6 py-2.5 text-center font-medium capitalize leading-5 text-white hover:bg-orange-600 lg:mt-0 lg:w-auto" href="#form">CONTACTO </a>
+      
 </main>
   )
 }

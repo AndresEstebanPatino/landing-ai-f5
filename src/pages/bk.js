@@ -1,8 +1,6 @@
 
 import { Inter } from 'next/font/google'
 import Spline from '@splinetool/react-spline';
-
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {

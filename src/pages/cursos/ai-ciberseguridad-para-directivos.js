@@ -1,10 +1,6 @@
 
 import FormMain from '@/components/FormMain';
 
-
-
-
-
 export default function Home() {
   return (
     <main className='overflow-hidden'>
@@ -27,14 +23,13 @@ export default function Home() {
         <div className="absolute inset-x-0 z-20 w-full bg-white px-6 py-4 shadow-md transition-all duration-300 ease-in-out dark:bg-gray-900 hidden lg:visible lg:relative lg:top-0 lg:mt-0 lg:flex lg:w-auto lg:translate-x-0 lg:items-center lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:dark:bg-transparent">
        
 
-        <a className="mt-4 block rounded-3xl bg-orange-f5 px-6 py-2.5 text-center font-medium capitalize leading-5 text-white hover:bg-orange-600 lg:mt-0 lg:w-auto" href="#form">¡Incríbete ya!</a>
+        <a className="mt-4 block rounded-3xl bg-orange-f5 px-6 py-2.5 text-center font-medium capitalize leading-5 text-white hover:bg-orange-600 lg:mt-0 lg:w-auto" href="#form">¡ Inscríbete ya !</a>
         </div>
     </nav>
 
     <div className="container mx-auto px-6 py-auto text-left z-10 relative pointer-events-none ">
         <div className="flex h-full flex-col mt-32 justify-center md:mt-0 lg:w-5/6 xl:w-1/2 ">
-            <h1 className="font-popins text-gray-900 text-4xl lg:text-5xl"><span className='font-bold'>Curso online en IA y Ciberseguridad </span><br></br>imprescindible para
-CEOs y Managers</h1>
+            <h1 className="font-popins text-gray-900 text-4xl lg:text-5xl"><span className='font-bold'>Curso online en IA y Ciberseguridad </span><br></br>imprescindible para CEOs y Managers</h1>
             <div className='flex mt-9 flex-col md:flex-row md:items-center md:justify-between'>
                < div className='md:w-3/4 font-popins text-gray-900 text-xl  '>
                 <p className="mb-5">Aprende todo lo que necesitas saber para impulsar, optimizar y proteger tu empresa.</p>
@@ -236,7 +231,7 @@ líderes empresariales a todos los niveles.</p>
       
 
         <div className="flex flex-col items-center justify-between sm:flex-row">
-        <a href="mailto:techtime2skill@factoriaf5.org" target='_blank' className="text-lg font-bold text-gray-800 transition-colors duration-300 hover:text-gray-700">Para cualquier duda o consulta, escríbenos a
+        <a href="#" className="text-lg font-bold text-gray-800 transition-colors duration-300 hover:text-gray-700">Para cualquier duda o consulta, escríbenos a
 techtime2skill@factoriaf5.org</a>
 
         <p className="mt-4 text-sm text-gray-500 dark:text-gray-300 sm:mt-0">© Copyright 2023. All Rights Reserved.</p>
@@ -244,7 +239,7 @@ techtime2skill@factoriaf5.org</a>
     </div>
     </footer> 
 
-    <a className="fixed bottom-5  right-5 mt-4 rounded-3xl bg-orange-f5 px-6 py-2.5 text-center font-medium capitalize leading-5 text-white hover:bg-orange-600 lg:mt-0 lg:w-auto" href="mailto:techtime2skill@factoriaf5.org" target='_blank'>CONTACTO </a>
+    <a className="fixed bottom-5  right-5 mt-4 rounded-3xl bg-orange-f5 px-6 py-2.5 text-center font-medium capitalize leading-5 text-white hover:bg-orange-600 lg:mt-0 lg:w-auto" href="#form">CONTACTO </a>
          
 </main>
   )

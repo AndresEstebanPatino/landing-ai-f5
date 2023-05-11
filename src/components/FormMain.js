@@ -10,7 +10,7 @@ function FormMain(props) {
     const [phone, setPhone] = useState('')
     const [company, setCompany] = useState('')
     const [rol, setRol] = useState('')
-    const [companySize, setCompanySize] = useState('')
+    const [companySize, setCompanySize] = useState('De 0 a 9 trabajadores/as')
     const [address, setAddress] = useState('')
     const [course, setCourse] = useState(`${props.curso}`)
     const [date, setDate] = useState(`${new Date().toJSON().slice(0, 10)}`)
@@ -55,12 +55,12 @@ else {
     <form className="mt-6" onSubmit={handleSubmit}>
        
         <div className="flex-1">
-        <label className="mb-2 block text-sm text-gray-600 ">Nombres</label>
+        <label className="mb-2 block text-sm text-gray-600 ">Nombre</label>
         <input inputMode='text' required pattern=".{2,}" value={name} onChange={e=> setName(e.target.value)} name='name' id='name' type="text" className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 " />
         </div>
 
         <div className="flex-1">
-        <label className="mb-2 block text-sm text-gray-600 ">Apellidos</label>
+        <label className="mb-2 block text-sm text-gray-600 ">Apellido</label>
         <input inputMode='text'  required pattern=".{2,}" value={lastName} onChange={e=> setLastName(e.target.value)} name='lastname' id='lastname' type="text" className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 " />
         </div>
 
