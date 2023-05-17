@@ -1,10 +1,6 @@
 
 import FormMain from '@/components/FormMain';
 
-
-
-
-
 export default function Home() {
   return (
     <main className='overflow-hidden'>
@@ -34,8 +30,7 @@ export default function Home() {
 
     <div className="container mx-auto px-6 py-auto text-left z-10 relative pointer-events-none ">
         <div className="flex h-full flex-col mt-32 justify-center md:mt-0 lg:w-5/6 xl:w-1/2 ">
-            <h1 className="font-popins text-gray-900 text-4xl lg:text-5xl"><span className='font-bold'>Curso online en IA y Ciberseguridad </span><br></br>imprescindible para
-CEOs y Managers</h1>
+            <h1 className="font-popins text-gray-900 text-4xl lg:text-5xl"><span className='font-bold'>Curso online en IA y Ciberseguridad </span><br></br>imprescindible para CEOs y Managers</h1>
             <div className='flex mt-9 flex-col md:flex-row md:items-center md:justify-between'>
                < div className='md:w-3/4 font-popins text-gray-900 text-xl  '>
                 <p className="mb-5">Aprende todo lo que necesitas saber para impulsar, optimizar y proteger tu empresa.</p>

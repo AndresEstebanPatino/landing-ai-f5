@@ -13,7 +13,7 @@ export default function Home() {
     <nav  className="container mx-auto p-6 lg:flex lg:items-center lg:justify-between ">
         <div className="flex items-center justify-between relative z-20">
         <div>
-            <a className="text-2xl font-bold text-white hover:text-gray-700 dark:text-white lg:text-3xl" href="#">
+            <a className="text-2xl font-bold text-white hover:text-gray-700 dark:text-white lg:text-3xl" href="/">
                 <img  src='https://factoriaf5.org/wp-content/uploads/2021/07/logo.png' alt='logo factoria f5'/>
             </a>
         </div>
