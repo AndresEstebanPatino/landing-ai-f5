@@ -8,11 +8,12 @@ import FormMain from '@/components/FormMain';
 export default function Home() {
   return (
     <main className='overflow-hidden'>
+        
     <section className="relative min-h-screen grid grid-rows-[100px_auto] bg-gradient-to-b from-salmon-f5 to-white">
     <nav  className="container mx-auto p-6 lg:flex lg:items-center lg:justify-between ">
         <div className="flex items-center justify-between relative z-20">
         <div>
-            <a className="text-2xl font-bold text-white hover:text-gray-700 dark:text-white lg:text-3xl" href="/">
+            <a className="text-2xl font-bold text-white hover:text-gray-700 lg:text-3xl" href="/">
                 <img  src='https://factoriaf5.org/wp-content/uploads/2021/07/logo.png' alt='logo factoria f5'/>
             </a>
         </div>
@@ -24,10 +25,10 @@ export default function Home() {
         </div>
 
        
-        <div className="absolute inset-x-0 z-20 w-full bg-white px-6 py-4 shadow-md transition-all duration-300 ease-in-out dark:bg-gray-900 hidden lg:visible lg:relative lg:top-0 lg:mt-0 lg:flex lg:w-auto lg:translate-x-0 lg:items-center lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:dark:bg-transparent">
+        <div className="absolute inset-x-0 z-20 w-full bg-white px-6 py-4 shadow-md transition-all duration-300 ease-in-out dark:bg-gray-900 hidden lg:visible lg:relative lg:top-0 lg:mt-0 lg:flex lg:w-auto lg:translate-x-0 lg:items-center lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none">
        
 
-        <a className="mt-4 block rounded-3xl bg-orange-f5 px-6 py-2.5 text-center font-medium capitalize leading-5 text-white hover:bg-orange-600 lg:mt-0 lg:w-auto" href="#form">¡Incríbete ya!</a>
+        <a className="mt-4 block rounded-3xl bg-orange-f5 px-6 py-2.5 text-center font-medium capitalize leading-5 text-white hover:bg-orange-600 lg:mt-0 lg:w-auto" href="#form">¡ Inscríbete ya !</a>
         </div>
     </nav>
 
@@ -123,7 +124,7 @@ a una amenaza. ¡No te quedes atrás!</p>
 <strong>Fechas y horarios:</strong>
 <ul className='list-disc mb-5'>
     <li>Lunes 6 de junio 2023 – de 16:00h a 19:30h</li>
-    <li>Martes 6 de junio 2023 – de 16:00h a 19:30h</li>
+    <li>Jueves 8 de junio 2023 – de 16:00h a 19:30h</li>
 </ul>
 
     <h4 className='mb-3 text-xl font-bold'>Módulo Ciberseguridad:</h4>
@@ -236,7 +237,7 @@ líderes empresariales a todos los niveles.</p>
       
 
         <div className="flex flex-col items-center justify-between sm:flex-row">
-        <a href="mailto:techtime2skill@factoriaf5.org" target='_blank' className="text-lg font-bold text-gray-800 transition-colors duration-300 hover:text-gray-700">Para cualquier duda o consulta, escríbenos a
+        <a href="mailto:techtime2skill@factoriaf5.org" className="text-lg font-bold text-gray-800 transition-colors duration-300 hover:text-gray-700">Para cualquier duda o consulta, escríbenos a
 techtime2skill@factoriaf5.org</a>
 
         <p className="mt-4 text-sm text-gray-500 dark:text-gray-300 sm:mt-0">© Copyright 2023. All Rights Reserved.</p>
@@ -244,8 +245,8 @@ techtime2skill@factoriaf5.org</a>
     </div>
     </footer> 
 
-    <a className="fixed bottom-5  right-5 mt-4 rounded-3xl bg-orange-f5 px-6 py-2.5 text-center font-medium capitalize leading-5 text-white hover:bg-orange-600 lg:mt-0 lg:w-auto" href="mailto:techtime2skill@factoriaf5.org" target='_blank'>CONTACTO </a>
+    <a className="fixed bottom-5  right-5 mt-4 rounded-3xl bg-orange-f5 px-6 py-2.5 text-center font-medium capitalize leading-5 text-white hover:bg-orange-600 lg:mt-0 lg:w-auto" href="#form">CONTACTO </a>
          
 </main>
-  )
+  ) 
 }
