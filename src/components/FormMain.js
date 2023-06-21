@@ -11,6 +11,7 @@ function FormMain(props) {
     const [company, setCompany] = useState('')
     const [rol, setRol] = useState('')
     const [companySize, setCompanySize] = useState('De 0 a 9 trabajadores/as')
+    const [schedule, setSchedule] = useState('')
     const [address, setAddress] = useState('')
     const [course, setCourse] = useState(`${props.curso}`)
     const [date, setDate] = useState(`${new Date().toJSON().slice(0, 10)}`)
@@ -28,8 +29,9 @@ function FormMain(props) {
         formData.append('address',address)
         formData.append('course',course)
         formData.append('date',date)
+        formData.append('schedule',schedule)
         
-        fetch('https://script.google.com/macros/s/AKfycbz9i6LweTvyp1SECiqp5ICOKQJcvRbudUG0-Lp0c9_7x4yDwRce3fLbTM-BSaAqca0x/exec', {
+        fetch('https://script.google.com/macros/s/AKfycbwJNb2REWPJW46gg3Nip-zY5WQHWPKFaWkEyjJJ0KMtpkfN5BvwBJcBgPBmx0D7tJ0V/exec', {
             mode: 'no-cors',
             method: "post",
             body: formData
@@ -61,7 +63,7 @@ else {
         </div>
 
         <div className="flex-1">
-        <label className="mb-2 block text-sm text-gray-600 ">Apellido</label>
+        <label className="mb-2 block text-sm text-gray-600 ">Apellidos</label>
         <input inputMode='text'  required pattern=".{2,}" value={lastName} onChange={e=> setLastName(e.target.value)} name='lastname' id='lastname' type="text" className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 " />
         </div>
 
@@ -98,6 +100,21 @@ else {
         <option value=' De 50 a 249 trabajadores/as '>  De 50 a 249 trabajadores/as</option>
    
         </select>
+        </div>
+
+        <div className="mt-6 flex-1">
+        <label className="mb-2 block text-sm text-gray-600 ">Horario de la formación</label>
+        <div className='flex items-center gap-5 my-5'>
+            <input type="radio" name='schedule' id='schedulemati' required value='10:00 a 13:30 hrs' onChange={e=> setSchedule(e.target.value)}/>
+            <label className="text-sm text-gray-600 " for="schedulemati">10:00 a 13:30 hrs</label>
+        </div>
+
+        <div className='flex items-center gap-5 my-5'>
+            <input type="radio" name='schedule' id='scheduletarda' required value='16:00 a 19:30 h' onChange={e=> setSchedule(e.target.value)}/>
+            <label className="text-sm text-gray-600 " for="scheduletarda">16:00 a 19:30 h</label>
+        </div>
+      
+        
         </div>
 
         <div className="mt-6 flex-1">
