@@ -1,5 +1,5 @@
 
-import FormMain from '@/components/FormMain';
+import FormMainBootcamp from '@/components/FormMainBootamp';
 
 export default function Home() {
   return (
@@ -34,21 +34,14 @@ export default function Home() {
           <div className="flex h-full flex-col mt-32 justify-center md:mt-0 lg:w-5/6 xl:w-1/2 ">
             <h1 className="font-popins text-gray-900 text-4xl lg:text-5xl">
               <span className="font-bold">
-                Curso online en IA y Ciberseguridad{" "}
+              ¡Inicia tu carrera en 
               </span>
-              <br></br>imprescindible para CEOs y Managers
+              <br/>Ciberseguridad 35 hrs
             </h1>
             <div className="flex mt-9 flex-col md:flex-row md:items-center md:justify-between">
               <div className="md:w-3/4 font-popins text-gray-900 text-xl  ">
                 <p className="mb-5">
-                  Aprende todo lo que necesitas saber para impulsar, optimizar y
-                  proteger tu empresa.
-                </p>
-                <p className="mb-5 font-bold">10 y 12 de julio de 2023</p>
-                <p className="">
-                  {" "}
-                  Programa Europeo TECH TIME 2 SKILL.<br></br> Formación
-                  subvencionada sin coste para PYMES
+                Conviértete en un experto en protección de datos en la nube en solo 7 meses. En nuestro bootcamp, te prepararemos para enfrentar los desafíos más emocionantes del mundo digital.<br></br> ¿Lo mejor de todo? No necesitas experiencia previa y te ofrecemos una formación intensiva de primer nivel.
                 </p>
               </div>
               <a href="#form">
@@ -74,20 +67,18 @@ export default function Home() {
           </div>
         </div>
         <div className="absolute h-full w-full z-0 mix-blend-multiply hidden md:block ">
-          <video
-            autoPlay
-            muted
-            loop
-            preload="true"
+          <img src="/img/candado.png"
             className="absolute bottom-1/2 xl:bottom-auto"
             width="100%"
             height="100%"
-            src="/img/general/hero-face-ai.mp4"
-            type="video/mp4"
-          ></video>
+          />
         </div>
-        <div className="absolute h-full w-full z-0 mix-blend-multiply  opacity-60 md:hidden flex items-start justify-end ">
-          <img className="w-4/6" src="/img/face-ai-movil.png" />
+        <div className="absolute h-full w-full z-0 mix-blend-multiply  md:hidden flex items-start justify-end ">
+        <img src="/img/candado.png"
+            className="w-full"
+            width="100%"
+            height="100%"
+          />
         </div>
       </section>
 
@@ -99,23 +90,11 @@ export default function Home() {
           <div className="flex-1 lg:-mx-6 lg:flex lg:items-center">
             <div className="lg:mx-6 lg:w-1/2 text-gray-900 font-popins text-xl">
               <p className="text-4xl mb-10 title-side-alone">
-                Formación 100% subvencionada <br></br> sin coste para PYMES.
+              ¡Domina la Ciberseguridad en la Nube y sé un profesional en demanda!
               </p>
               <p className=" mb-5">
-                España es el tercer país con más ciberataques a nivel mundial.
-                ¿Sabías que las PYMES son el objetivo del 70% de ciberataques, y
-                que 6 de cada 10 han tenido que cerrar después de éste?
-              </p>
-              <p className="mb-5">
-                ¿Quieres saber cómo mejorar tus ventas y productividad, reducir
-                cargas de trabajo y disparar tus beneficios gracias a la
-                Inteligencia Artificial?
-              </p>
-              <p className="mb-5">
-                Descubre cuáles son las herramientas digitales imprescindibles
-                que necesitas, cómo utilizarlas y cómo proteger tu negocio
-                frente a una amenaza. ¡No te quedes atrás!
-              </p>
+              Siempre un paso adelante
+En Factoria F5, te convertirás en el experto que detecta y responde rápidamente a los ataques en la nube. <br></br><br></br>Minimiza los efectos de los incidentes, encuentra soluciones y aprende de cada situación para prevenir futuros ataques.<br></br><br></br> Tu habilidad para actuar bajo presión y resolver problemas será clave en el mundo de la ciberseguridad en la nube.  </p>
             </div>
 
             <div className="mt-1 lg:mx-2 lg:w-1/2">
@@ -124,7 +103,7 @@ export default function Home() {
                   ¡Inscríbete ahora!
                 </h1>
 
-                <FormMain curso="1 Day for CEOS" />
+                <FormMainBootcamp curso="Bootcam" />
               </div>
             </div>
           </div>
@@ -139,38 +118,15 @@ export default function Home() {
 
           <div className="text-gray-900 mx-auto w-full overflow-hidden rounded-3xl bg-white p-20 shadow-2xl lg:max-w-5xl  font-popins">
             <p className="mb-5 ">
-              <strong>Duración total:</strong> 7 horas<br></br>
-              <strong>Formato:</strong> 2 sesiones de 3 horas + 30min dudas/preguntas<br></br>
-              <strong>Modalidad:</strong> Online ¡en directo! por videoconferencia Zoom <br></br>
-            </p>
-            <strong>Fechas y horarios:</strong>
-            <ul className="list-disc mb-5">
-              <li><span className='font-bold'>OPCIÓN 1. Horario de mañana:</span> 10 y 12 de julio de 10:00h a 13:30h</li>
-
-              <li><span className='font-bold'>OPCIÓN 2. Horario de tarde: </span> 10 y 12 de julio de 16:00h a 19:30h</li>
-            </ul>
-
-            <h4 className="mb-3 text-xl font-bold">Módulo Ciberseguridad:</h4>
-            <ul className="list-disc">
-              <li>
-              Fundamentos de la Ciberseguridad y su vital importancia en el entorno empresarial actual.
-              </li>
-              <li>
-              Tipos de Ciberataques y cómo evitar que amenacen el funcionamiento de tu empresa.
-              </li>
-              <li>Cómo incluir la Ciberseguridad en tu estrategia corporativa. Áreas críticas en la empresa: Identificación de las áreas más vulnerables a los ataques y la importancia de protegerlas.
-</li>
-              <li>Implementación de soluciones y prácticas recomendadas en Ciberseguridad.</li>
-            </ul>
-            <h4 className="mt-10 mb-3 text-xl font-bold">
-              Módulo Inteligencia Artificial:
-            </h4>
-            <ul className="list-disc">
-              <li>Fundamentos de IA, clarificación de conceptos y su relevancia en la actual revolución tecnológica.</li>
-              <li>Usos de la IA. Aprovecha el potencial de la Inteligencia Artificial para llevar a tu empresa al siguiente nivel. Exploración de diversas aplicaciones y casos de uso de la IA.</li>
-              <li>Cómo Integrar la IA en tus procesos empresariales y tomar decisiones más informadas.</li>
-              <li>Descubre las tecnologías y herramientas de Inteligencia Artificial esenciales y cómo aplicarlas. Análisis de aplicaciones de IA.</li>
-            </ul>
+            En nuestro bootcamp de 7 meses, explorarás los siguientes temas:<br></br>
+                          </p>
+                          <ul className='list-disc'>
+    <li>Arquitectura de la nube y modelos de servicio: comprende cómo funcionan los servicios en la nube y cómo se aplican a diferentes modelos de negocio.</li>
+    <li>Protección de datos en la nube: aprende a garantizar la seguridad y privacidad de la información en los entornos de computación en la nube.</li>
+    <li>Monitoreo y detección de amenazas: domina las herramientas y técnicas para identificar y responder rápidamente a los ataques cibernéticos en la nube.</li>
+    <li>Cumplimiento normativo y ética: conoce las regulaciones y mejores prácticas en ciberseguridad para garantizar una conducta profesional y ética.</li>
+</ul>
+           
           </div>
         </div>
       </section>
@@ -184,15 +140,10 @@ export default function Home() {
 
             <div className="lg:mx-6 lg:w-1/2">
               <h3 className="text-gray-900  text-4xl mb-10 font-semibold lg:text-4xl font-popins ">
-                Minimiza riesgos y protégete ante ciberataques{" "}
+              Analista de Ciberseguridad en la Nube: el guardián de tus datos
               </h3>
               <p className="text-gray-900 text-xl   font-popins ">
-                Los ciberataques aumentan sin parar y son una amenaza real para
-                toda empresa y sus clientes , especialmente para las PYMES No
-                permitas que tu empresa sea la próxima. Implementando
-                herramientas de Inteligencia Artificial y Ciberseguridad podrás
-                mantener tus sistemas y datos seguros, proteger la reputación de
-                tu empresa y mantener la confianza de tus clientes.
+              Como Analista de Ciberseguridad en la Nube, serás el héroe digital que protege los sistemas y datos en la nube. Aprenderás a identificar y anticiparte a las amenazas, a evaluar vulnerabilidades y a implementar medidas de seguridad avanzadas. Tu misión será garantizar la privacidad y la integridad de los datos en el mundo virtual.
               </p>
             </div>
           </div>
@@ -204,16 +155,10 @@ export default function Home() {
           <div className="flex-1 lg:-mx-6 flex flex-col-reverse lg:flex-row  lg:items-center ">
             <div className="lg:mx-6 lg:w-1/2">
               <h3 className="text-gray-900  text-4xl mb-10 font-semibold lg:text-4xl font-popins ">
-                Reduce las posibilidades de error: toma decisiones más
-                informadas y precisas
+              Pentester en la Nube: desafía los límites
               </h3>
               <p className="text-gray-900 text-xl   font-popins ">
-                La Inteligencia Artificial y la Ciberseguridad son áreas
-                altamente técnicas y especializadas que pueden ser difíciles de
-                comprender y evaluar para los líderes empresariales. Sin
-                embargo, es vital que todo líder tenga conocimiento y tome
-                decisiones bien informadas en estas áreas para garantizar la
-                protección de su empresa y mantener su posición en el mercado.
+              Como Pentester en la Nube, utilizarás tus habilidades de hacker ético para identificar las vulnerabilidades en los sistemas en la nube. Aprenderás técnicas avanzadas de penetración, encontrarás debilidades y proporcionarás soluciones efectivas. Conviértete en el guardián invisible que protege los datos más valiosos.
               </p>
             </div>
 
@@ -224,33 +169,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-b from-salmon-f5 to-white py-5">
-        <div className="container mx-auto flex flex-col px-6 py-10">
-          <div className="flex-1 lg:-mx-6 lg:flex lg:items-center">
-            <div className="mt-1 lg:mx-2 lg:w-1/2">
-              <img className="mix-blend-multiply" src="/img/features3.jpg" />
-            </div>
-
-            <div className="lg:mx-6 lg:w-1/2">
-              <h3 className="text-gray-900  text-4xl mb-10 font-semibold lg:text-4xl font-popins ">
-                La Protección de los datos empresariales: Una prioridad absoluta
-                en la era de la tecnología y la información
-              </h3>
-              <p className="text-gray-900 text-xl   font-popins ">
-                El uso de herramientas avanzadas de Inteligencia Artificial y
-                Ciberseguridad es absolutamente necesario para garantizar una
-                protección efectiva de los datos y cumplir con las normativas y
-                regulaciones en constante evolución. La falta de protección
-                adecuada puede implicar consecuencias muy graves para la
-                empresa, incluyendo pérdida de datos, daño a la reputación,
-                interrupción del negocio o incluso su cese. Por ello, la
-                seguridad de los datos empresariales debe ser una prioridad
-                absoluta para líderes empresariales a todos los niveles.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <footer className="bg-white ">
         <div className="container mx-auto px-6 py-12">
