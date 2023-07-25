@@ -1,5 +1,5 @@
 
-import FormMainBootcamp from '@/components/FormMainBootamp';
+import Form35hrs from '@/components/Form35hrs';
 
 export default function Home() {
   return (
@@ -34,15 +34,14 @@ export default function Home() {
           <div className="flex h-full flex-col mt-32 justify-center md:mt-0 lg:w-5/6 xl:w-1/2 ">
             <h1 className="font-popins text-gray-900 text-4xl lg:text-5xl">
               <span className="font-bold">
-              ¡Inicia tu carrera en 
+              ¡Descubre el potencial de la 
               </span>
-              <br/>Inteligencia artificial 35 hrs
+              <br/>Inteligencia Artificial !
             </h1>
             <div className="flex mt-9 flex-col md:flex-row md:items-center md:justify-between">
               <div className="md:w-3/4 font-popins text-gray-900 text-xl  ">
                 <p className="mb-5">
-                Conviértete en un experto en protección de datos en la nube en solo 7 meses. En nuestro bootcamp, te prepararemos para enfrentar los desafíos más emocionantes del mundo digital.<br></br> ¿Lo mejor de todo? No necesitas experiencia previa y te ofrecemos una formación intensiva de primer nivel.
-                </p>
+                En este curso de 35 horas, te sumergirás en el fascinante mundo de la Inteligencia Artificial y aprenderás a utilizar herramientas de IA de fácil uso para aumentar la productividad y mejorar los procesos en tu empresa.</p>
               </div>
               <a href="#form">
                 <button className="rounded-full bg-orange-f5 px-2 text-white  focus:outline-none pointer-events-auto relative flex items-center h-20 w-full max-w-[250px] mt-7 md:w-[150px] md:mt-0  group">
@@ -66,15 +65,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute h-full w-full z-0 mix-blend-multiply hidden md:block ">
-          <img src="/img/candado.png"
+        <div className="absolute h-full w-full z-0 mix-blend-multiply hidden md:block pointer-events-none ">
+          <img src="/img/cubo-ia.png"
             className="absolute bottom-1/2 xl:bottom-auto"
             width="100%"
             height="100%"
           />
         </div>
-        <div className="absolute h-full w-full z-0 mix-blend-multiply  md:hidden flex items-start justify-end ">
-        <img src="/img/candado.png"
+        <div className="absolute h-full w-full z-0 mix-blend-multiply  md:hidden flex items-start justify-end pointer-events-none ">
+        <img src="/img/cubo-ia.png"
             className="w-full"
             width="100%"
             height="100%"
@@ -90,11 +89,12 @@ export default function Home() {
           <div className="flex-1 lg:-mx-6 lg:flex lg:items-center">
             <div className="lg:mx-6 lg:w-1/2 text-gray-900 font-popins text-xl">
               <p className="text-4xl mb-10 title-side-alone">
-              ¡Domina la Ciberseguridad en la Nube y sé un profesional en demanda!
+              ¡¡No pierdas esta oportunidad! lleva a tu empresa al siguiente nivel con la IA!
               </p>
               <p className=" mb-5">
-              Siempre un paso adelante
-En Factoria F5, te convertirás en el experto que detecta y responde rápidamente a los ataques en la nube. <br></br><br></br>Minimiza los efectos de los incidentes, encuentra soluciones y aprende de cada situación para prevenir futuros ataques.<br></br><br></br> Tu habilidad para actuar bajo presión y resolver problemas será clave en el mundo de la ciberseguridad en la nube.  </p>
+              Durante el programa, explorarás diversas aplicaciones de IA en el entorno laboral, desde modelos generativos de IA como asistentes personales, hasta aplicaciones de IA para ventas, marketing y mejora de las operaciones. Además, adquirirás habilidades prácticas en el uso efectivo de estas herramientas, lo que te permitirá tomar decisiones basadas en datos mediante el análisis de grandes volúmenes de información y optimizar los procesos empresariales mediante la identificación de áreas de mejora y la automatización de tareas.
+              <br></br><br></br>
+Nuestro enfoque estratégico te proporcionará las claves para integrar de manera eficaz la IA en tu empresa y maximizar su impacto en todos los niveles. Aprovecha esta oportunidad única para desarrollar tus habilidades en IA y destacar en el mercado laboral actual.</p>
             </div>
 
             <div className="mt-1 lg:mx-2 lg:w-1/2">
@@ -103,7 +103,7 @@ En Factoria F5, te convertirás en el experto que detecta y responde rápidament
                   ¡Inscríbete ahora!
                 </h1>
 
-                <FormMainBootcamp curso="Bootcam" />
+                <Form35hrs curso="ia35hrs" />
               </div>
             </div>
           </div>
@@ -118,15 +118,30 @@ En Factoria F5, te convertirás en el experto que detecta y responde rápidament
 
           <div className="text-gray-900 mx-auto w-full overflow-hidden rounded-3xl bg-white p-20 shadow-2xl lg:max-w-5xl  font-popins">
             <p className="mb-5 ">
-            En nuestro bootcamp de 7 meses, explorarás los siguientes temas:<br></br>
-                          </p>
-                          <ul className='list-disc'>
-    <li>Arquitectura de la nube y modelos de servicio: comprende cómo funcionan los servicios en la nube y cómo se aplican a diferentes modelos de negocio.</li>
-    <li>Protección de datos en la nube: aprende a garantizar la seguridad y privacidad de la información en los entornos de computación en la nube.</li>
-    <li>Monitoreo y detección de amenazas: domina las herramientas y técnicas para identificar y responder rápidamente a los ataques cibernéticos en la nube.</li>
-    <li>Cumplimiento normativo y ética: conoce las regulaciones y mejores prácticas en ciberseguridad para garantizar una conducta profesional y ética.</li>
-</ul>
-           
+              <strong>Duración total:</strong> 35 horas<br></br>
+              <strong>Formato:</strong> 6 semanas, 2 dias semana x 3h/dia<br></br>
+              <strong>Modalidad:</strong> Online ¡en directo! por videoconferencia Zoom <br></br>
+            </p>
+            <strong>Fechas y horarios:</strong>
+            <ul className="list-disc mb-5">
+              <li>19 Septiembre al 2 Noviembre</li>
+            </ul>
+
+            <h4 className="mb-3 text-xl font-bold">Contenido</h4>
+            <ul className="list-disc">
+            <li>Introducción a la IA y su importancia estratégica para las PYME</li>
+            <li>Descubrir y aprovechar el potencial de las herramientas de IA de fácil uso</li>
+            <li>Aprender a utilizar eficazmente estas herramientas para aumentar la productividad de los/as empleados/as y mejorar los procesos</li>
+            <li>Explorar diversas aplicaciones de IA en el entorno laboral</li>
+            <li>Modelos generativos de IA como asistentes personales</li>
+            <li>Aplicaciones de la IA para ventas y marketing</li>
+            <li>IA para mejorar las operaciones</li>
+            <li>Estrategias para la integración eficaz de la IA y la maximización del impacto empresarial</li>
+            <li>Adquirir habilidades prácticas en el uso efectivo de herramientas de IA</li>
+            <li>Mejorar la toma de decisiones basada en datos mediante el análisis de grandes volúmenes de información</li>
+            <li>Optimizar procesos empresariales mediante la identificación de áreas de mejora y la automatización de tareas</li>
+  </ul>
+            
           </div>
         </div>
       </section>
@@ -135,16 +150,15 @@ En Factoria F5, te convertirás en el experto que detecta y responde rápidament
         <div className="container mx-auto flex flex-col px-6 py-10">
           <div className="flex-1 lg:-mx-6 lg:flex lg:items-center">
             <div className="mt-1 lg:mx-2 lg:w-1/2">
-              <img className="mix-blend-multiply" src="/img/features1.jpg" />
+              <img className="mix-blend-multiply" src="/img/features2.jpg" />
             </div>
 
             <div className="lg:mx-6 lg:w-1/2">
               <h3 className="text-gray-900  text-4xl mb-10 font-semibold lg:text-4xl font-popins ">
-              Analista de Ciberseguridad en la Nube: el guardián de tus datos
+              Minimiza los errores y toma decisiones más informadas
               </h3>
               <p className="text-gray-900 text-xl   font-popins ">
-              Como Analista de Ciberseguridad en la Nube, serás el héroe digital que protege los sistemas y datos en la nube. Aprenderás a identificar y anticiparte a las amenazas, a evaluar vulnerabilidades y a implementar medidas de seguridad avanzadas. Tu misión será garantizar la privacidad y la integridad de los datos en el mundo virtual.
-              </p>
+              La Inteligencia Artificial te brinda la capacidad de tomar decisiones más precisas y basadas en datos. Aprenderás a analizar grandes volúmenes de información y utilizarla de manera estratégica para mejorar tus procesos empresariales. No permitas que la falta de conocimiento en IA te impida tomar decisiones informadas y mantener tu posición en el mercado laboral actual.</p>
             </div>
           </div>
         </div>
@@ -155,20 +169,38 @@ En Factoria F5, te convertirás en el experto que detecta y responde rápidament
           <div className="flex-1 lg:-mx-6 flex flex-col-reverse lg:flex-row  lg:items-center ">
             <div className="lg:mx-6 lg:w-1/2">
               <h3 className="text-gray-900  text-4xl mb-10 font-semibold lg:text-4xl font-popins ">
-              Pentester en la Nube: desafía los límites
+              Optimiza tus procesos empresariales y aumenta la productividad
               </h3>
               <p className="text-gray-900 text-xl   font-popins ">
-              Como Pentester en la Nube, utilizarás tus habilidades de hacker ético para identificar las vulnerabilidades en los sistemas en la nube. Aprenderás técnicas avanzadas de penetración, encontrarás debilidades y proporcionarás soluciones efectivas. Conviértete en el guardián invisible que protege los datos más valiosos.
-              </p>
+              Identifica las áreas de mejora en tus procesos y automatiza tareas repetitivas y tediosas. Con las herramientas de IA adecuadas, podrás optimizar tus operaciones y permitir que tus empleados se enfoquen en tareas de mayor valor añadido. Aprovecha el potencial de la Inteligencia Artificial para impulsar la productividad y el crecimiento de tu empresa.
+               </p>
             </div>
 
             <div className="mt-1 lg:mx-2 lg:w-1/2">
-              <img className="mix-blend-multiply" src="/img/features2.jpg" />
+              <img className="mix-blend-multiply" src="/img/features6.jpg" />
             </div>
           </div>
         </div>
       </section>
 
+      <section className="bg-gradient-to-b from-salmon-f5 to-white py-5">
+        <div className="container mx-auto flex flex-col px-6 py-10">
+          <div className="flex-1 lg:-mx-6 lg:flex lg:items-center">
+            <div className="mt-1 lg:mx-2 lg:w-1/2">
+              <img className="mix-blend-multiply" src="/img/features4.jpg" />
+            </div>
+
+            <div className="lg:mx-6 lg:w-1/2">
+              <h3 className="text-gray-900  text-4xl mb-10 font-semibold lg:text-4xl font-popins ">
+              Mejora la competitividad en el mercado actual
+              </h3>
+              <p className="text-gray-900 text-xl   font-popins ">
+              La IA se ha convertido en una herramienta clave para mantenerse competitivo en el mercado laboral. Aprender a utilizar eficazmente las herramientas de IA te brindará una ventaja estratégica frente a tus competidores. No te quedes atrás y adquiere las habilidades necesarias para destacar en el entorno laboral actual.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <footer className="bg-white ">
         <div className="container mx-auto px-6 py-12">
