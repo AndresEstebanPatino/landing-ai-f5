@@ -32,16 +32,27 @@ export default function Home() {
 
         <div className="container mx-auto px-6 py-auto text-left z-10 relative pointer-events-none ">
           <div className="flex h-full flex-col mt-32 justify-center md:mt-0 lg:w-5/6 xl:w-1/2 ">
-            <h1 className="font-popins text-gray-900 text-4xl lg:text-5xl">
-              <span className="font-bold">
-              Curso exclusivo de 
+            <h1 className="font-popins text-gray-900 text-4xl lg:text-4xl">
+              <span className="font-bold lg:text-5xl">
+                Curso maestro en Ciberseguridad
               </span>
-              <br/>Ciberseguridad para empleados
+              <br />para PYMES y Autónomos/as
             </h1>
             <div className="flex mt-9 flex-col md:flex-row md:items-center md:justify-between">
               <div className="md:w-3/4 font-popins text-gray-900 text-xl  ">
                 <p className="mb-5">
-                ¿Te gustaría ser un/a Embajador/a de Ciberseguridad en tu empresa y promover una cultura de seguridad en toda la organización? <br></br>Si es así, este curso es perfecto para ti. Aprenderás las mejores prácticas y estrategias para proteger los activos de información críticos de la empresa y garantizar la confidencialidad, integridad y disponibilidad de los datos.</p>
+                  Aprende las mejores prácticas y estrategias para mitigar ciberataques protegiendo tu empresa y sus activos críticos. Garantiza la confidencialidad y la integridad de tus datos, manteniendo la continuidad del negocio y la confianza de tus clientes.
+                </p>
+                <p className="mb-5 font-bold">
+                  Inicio: 19 de septiembre de 2023
+                </p>
+                <p className="mb-5">
+                  Programa Europeo TECH TIME 2 SKILL.
+                  Formación 100% subvencionada sin coste para PYMES y Autónomos/as
+
+
+
+                </p>
               </div>
               <a href="#form">
                 <button className="rounded-full bg-orange-f5 px-2 text-white  focus:outline-none pointer-events-auto relative flex items-center h-20 w-full max-w-[250px] mt-7 md:w-[150px] md:mt-0  group">
@@ -73,7 +84,7 @@ export default function Home() {
           />
         </div>
         <div className="absolute h-full w-full z-0 mix-blend-multiply  md:hidden flex items-start justify-end pointer-events-none ">
-        <img src="/img/candado.png"
+          <img src="/img/candado.png"
             className="w-full"
             width="100%"
             height="100%"
@@ -89,11 +100,21 @@ export default function Home() {
           <div className="flex-1 lg:-mx-6 lg:flex lg:items-center">
             <div className="lg:mx-6 lg:w-1/2 text-gray-900 font-popins text-xl">
               <p className="text-4xl mb-10 title-side-alone">
-              No pierdas esta oportunidad de convertirte en un/a experto/a en ciberseguridad </p>
+                Formación 100% subvencionada sin coste para PYMES y Autónomos/as
+              </p>
               <p className=" mb-5">
-              
-              En este curso, te proporcionaremos los conocimientos y habilidades necesarios para convertirte en un Embajador/a de Ciberseguridad en tu empresa. <br></br><br></br>Serás capaz de promover una cultura de seguridad, aplicar las mejores prácticas y estrategias, seleccionar soluciones de seguridad efectivas y colaborar con expertos para abordar las necesidades específicas de tu organización.
-               
+
+                Cada día hay más de 40.000 cibertataques en nuestro país y el objetivo del 70% son las PYMES. Un ciberataque es tan devastador que 6 de cada 10 PYMES se ven obligadas a cerrar... ¡No te arriesgues más y aprende cómo protegerte a tiempo!
+              </p>
+              <p className=" mb-5">
+                <span className='font-bold'>  El factor humano es la clave del éxito.</span> Tener conciencia de ello y formarte adecuadamente te permitirá minimizar riesgos y ser capaz de detectar amenazas para combatirlas antes de que sea demasiado tarde.
+              </p>
+              <p className=" mb-5">
+                En un mundo digital, la Ciberseguridad es un pilar fundamental para la supervivencia y el crecimiento de cualquier negocio. Proteger tu estabilidad financiera, la confianza de tus clientes y la continuidad de tus operaciones comerciales; no solo es imprescindible, sino vital.
+              </p>
+              <p className=" mb-5">
+                Descubre cómo protegerte implementando la seguridad necesaria tanto en tu vida profesional, como personal.
+
 
               </p>
             </div>
@@ -120,27 +141,31 @@ export default function Home() {
           <div className="text-gray-900 mx-auto w-full overflow-hidden rounded-3xl bg-white p-20 shadow-2xl lg:max-w-5xl  font-popins">
             <p className="mb-5 ">
               <strong>Duración total:</strong> 35 horas<br></br>
-              <strong>Formato:</strong> 6 semanas, 2 dias semana x 3h/dia<br></br>
+              <strong>Formato:</strong> 12 sesiones<br></br>
               <strong>Modalidad:</strong> Online ¡en directo! por videoconferencia Zoom <br></br>
             </p>
-            <strong>Fechas y horarios:</strong>
+
             <ul className="list-disc mb-5">
-              <li>2 Octubre al 13 Noviembre</li>
+              <li> <strong>Fechas inicio: </strong>Martes, 19 Septiembre de 2023</li>
+              <li> <strong>Fechas fin: </strong> Jueves, 2 Noviembre, 2023</li>
+              <li> <strong>Horario: </strong>Todos los martes y jueves de 16:00h a 19:00h
+                <br></br>
+                <em>(excepto martes 26/09 y jueves 12/10 – no habrá clase)</em></li>
             </ul>
 
             <h4 className="mb-3 text-xl font-bold">Contenido</h4>
             <ul className="list-disc">
-            <li>Comprender los conceptos fundamentales de la Ciberseguridad y su importancia.</li>
-  <li>Adquirir conocimientos sobre amenazas y ataques comunes y cómo mitigarlos.</li>
-  <li>Identificar y clasificar los activos de información críticos de la empresa y aplicar medidas de protección adecuadas.</li>
-  <li>Dominar las mejores prácticas y políticas de seguridad de la información para garantizar la confidencialidad, integridad y disponibilidad de los datos.</li>
-  <li>Aprender a proteger dispositivos móviles y asegurar el trabajo a distancia de forma segura.</li>
-  <li>Implementar medidas de seguridad efectivas en redes y sistemas de correo electrónico para prevenir ataques de malware y phishing.</li>
-  <li>Desarrollar habilidades para la planificación de la continuidad de las actividades y la gestión eficiente de incidentes de seguridad.</li>
-  <li>Aplicar los conocimientos adquiridos en la elaboración de un plan de seguridad de la información para la empresa.</li>
-  <li>Ser Embajador/a de Ciberseguridad en la empresa, actuando como líder y referente en la protección de datos y promover educación en seguridad digital dentro de la organización.</li>
-  </ul>
-            
+              <li>Comprender los conceptos fundamentales de la Ciberseguridad y su importancia.</li>
+              <li>Adquirir conocimientos sobre amenazas y ataques comunes y cómo mitigarlos.</li>
+              <li>Identificar y clasificar los activos de información críticos de la empresa y aplicar medidas de protección adecuadas.</li>
+              <li>Dominar las mejores prácticas y políticas de seguridad de la información para garantizar la confidencialidad, integridad y disponibilidad de los datos.</li>
+              <li>Aprender a proteger dispositivos móviles y asegurar el trabajo a distancia de forma segura.</li>
+              <li>Implementar medidas de seguridad efectivas en redes y sistemas de correo electrónico para prevenir ataques de malware y phishing.</li>
+              <li>Desarrollar habilidades para la planificación de la continuidad de las actividades y la gestión eficiente de incidentes de seguridad.</li>
+              <li>Aplicar los conocimientos adquiridos en la elaboración de un plan de seguridad de la información para la empresa.</li>
+              <li>Ser Embajador/a de Ciberseguridad en la empresa, actuando como líder y referente en la protección de datos y promover educación en seguridad digital dentro de la organización.</li>
+            </ul>
+
           </div>
         </div>
       </section>
@@ -154,13 +179,13 @@ export default function Home() {
 
             <div className="lg:mx-6 lg:w-1/2">
               <h3 className="text-gray-900  text-4xl mb-10 font-semibold lg:text-4xl font-popins ">
-              Protege a tu empresa de ciberataques
+                Protege a tu empresa de ciberataques
               </h3>
               <p className="text-gray-900 text-xl   font-popins ">
-              
-              Los ciberataques son una amenaza real y en aumento, y ninguna empresa está exenta de sufrirlos. Como empleado/a, es fundamental que estés preparado/a para identificar y mitigar estas amenazas. Nuestro curso te proporcionará los conocimientos necesarios para proteger los activos de información críticos de tu empresa y mantener seguros los datos de tus clientes.
-              
-               </p>
+
+                Los ciberataques son una amenaza real y en aumento, y ninguna empresa está exenta de sufrirlos.Es fundamental que estés preparado/a para identificar y mitigar estas amenazas. Nuestro curso te proporcionará los conocimientos necesarios para proteger los activos de información críticos de tu empresa y mantener seguros los datos de tus clientes.
+
+              </p>
             </div>
           </div>
         </div>
@@ -171,11 +196,11 @@ export default function Home() {
           <div className="flex-1 lg:-mx-6 flex flex-col-reverse lg:flex-row  lg:items-center ">
             <div className="lg:mx-6 lg:w-1/2">
               <h3 className="text-gray-900  text-4xl mb-10 font-semibold lg:text-4xl font-popins ">
-              Toma decisiones informadas en ciberseguridad:
+                Toma decisiones informadas en ciberseguridad:
               </h3>
               <p className="text-gray-900 text-xl   font-popins ">
-              La falta de comprensión sobre ciberseguridad puede llevar a tomar decisiones erróneas que ponen en riesgo la empresa. Como empleado/a, es esencial que adquieras conocimientos sólidos sobre amenazas comunes y cómo contrarrestarlas. Con nuestro curso, aprenderás a evaluar riesgos y aplicar medidas de protección adecuadas, lo que te permitirá tomar decisiones informadas y contribuir a la seguridad general de la organización.
-               </p>
+                La falta de comprensión sobre ciberseguridad puede llevar a tomar decisiones erróneas que ponen en riesgo la empresa. Es esencial que adquieras conocimientos sólidos sobre amenazas comunes y cómo contrarrestarlas. Con nuestro curso, aprenderás a evaluar riesgos y aplicar medidas de protección adecuadas, lo que te permitirá tomar decisiones informadas y contribuir a la seguridad general de la organización.
+              </p>
             </div>
 
             <div className="mt-1 lg:mx-2 lg:w-1/2">
@@ -194,12 +219,12 @@ export default function Home() {
 
             <div className="lg:mx-6 lg:w-1/2">
               <h3 className="text-gray-900  text-4xl mb-10 font-semibold lg:text-4xl font-popins ">
-              Garantiza la continuidad del negocio
+                Garantiza la continuidad del negocio
               </h3>
               <p className="text-gray-900 text-xl   font-popins ">
-              
-              Los incidentes de seguridad pueden interrumpir las operaciones de la empresa y causar pérdidas significativas. Como Embajador/a de Ciberseguridad, serás responsable de planificar la continuidad de las actividades y gestionar eficientemente los incidentes de seguridad. Nuestro curso te dotará de las habilidades necesarias para mantener la estabilidad operativa frente a situaciones de crisis y proteger la reputación de la empresa. 
-               </p>
+
+                Los incidentes de seguridad pueden interrumpir las operaciones de la empresa y causar pérdidas significativas. Con los conocimientos adquiridos serás capaz de planificar la continuidad de las actividades y gestionar eficientemente los incidentes de seguridad. Nuestro curso te dotará de las habilidades necesarias para mantener la estabilidad operativa frente a situaciones de crisis y proteger la reputación de la empresa.
+              </p>
             </div>
           </div>
         </div>
@@ -231,5 +256,5 @@ export default function Home() {
         CONTACTO{" "}
       </a>
     </main>
-  ); 
+  );
 }

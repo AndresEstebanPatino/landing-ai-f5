@@ -44,7 +44,7 @@ export default function Home() {
                   Aprende todo lo que necesitas saber para impulsar, optimizar y
                   proteger tu empresa.
                 </p>
-                <p className="mb-5 font-bold">10 y 12 de julio de 2023</p>
+                <p className="mb-5 font-bold">18 y 20 de Septiembre de 2023</p>
                 <p className="">
                   {" "}
                   Programa Europeo TECH TIME 2 SKILL.<br></br> Formación
@@ -145,9 +145,9 @@ export default function Home() {
             </p>
             <strong>Fechas y horarios:</strong>
             <ul className="list-disc mb-5">
-              <li><span className='font-bold'>OPCIÓN 1. Horario de mañana:</span> 10 y 12 de julio de 10:00h a 13:30h</li>
+              <li><span className='font-bold'>OPCIÓN 1. Horario de mañana:</span> 18 y 20 de Septiembre de 10:00h a 13:30h</li>
 
-              <li><span className='font-bold'>OPCIÓN 2. Horario de tarde: </span> 10 y 12 de julio de 16:00h a 19:30h</li>
+              <li><span className='font-bold'>OPCIÓN 2. Horario de tarde: </span> 18 y 20 de Septiembre de 16:00h a 19:30h</li>
             </ul>
 
             <h4 className="mb-3 text-xl font-bold">Módulo Ciberseguridad:</h4>
